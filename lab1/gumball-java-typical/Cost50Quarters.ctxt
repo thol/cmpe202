@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Cost50Quarters
+comment0.text=\n\ Write\ a\ description\ of\ class\ Cost50Quarters\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=size
+comment1.target=Cost50Quarters(int)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Cost50Quarters\n
+comment2.params=coin
+comment2.target=void\ insertCoin(int)
+comment3.params=
+comment3.target=void\ turnCrank()
+numComments=4
