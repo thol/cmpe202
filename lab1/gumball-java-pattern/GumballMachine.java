@@ -3,40 +3,41 @@
 public class GumballMachine {
  
 	State soldOutState;
-	State noQuarterState;
-	State hasQuarterState;
+	State noCoinState;
+	State hasCoinState;
 	State soldState;
+	State enoughCoinsState;
+	State notEnoughCoinsState;
  
 	State state = soldOutState;
 	int count = 0;
+	public int coinValue = 0;
+	public int cumValue = 0;
  
 	public GumballMachine(int numberGumballs) {
 		soldOutState = new SoldOutState(this);
-		noQuarterState = new NoQuarterState(this);
-		hasQuarterState = new HasQuarterState(this);
+		noCoinState = new NoCoinState(this);
+		hasCoinState = new HasCoinState(this);
 		soldState = new SoldState(this);
+		enoughCoinsState = new EnoughCoinsState(this);
+		notEnoughCoinsState = new NotEnoughCoinsState(this);
 
 		this.count = numberGumballs;
  		if (numberGumballs > 0) {
-			state = noQuarterState;
+			state = noCoinState;
 		} 
 	}
  
-	public void insertQuarter() {
-		state.insertQuarter();
+	public void insertCoin(int value) {
 	}
  
-	public void ejectQuarter() {
-		state.ejectQuarter();
+	public void ejectCoin() {
 	}
  
 	public void turnCrank() {
-		state.turnCrank();
-		state.dispense();
 	}
 
 	void setState(State state) {
-		this.state = state;
 	}
  
 	void releaseBall() {
@@ -52,7 +53,7 @@ public class GumballMachine {
  
 	void refill(int count) {
 		this.count = count;
-		state = noQuarterState;
+		state = noCoinState;
 	}
 
     public State getState() {
@@ -63,14 +64,22 @@ public class GumballMachine {
         return soldOutState;
     }
 
-    public State getNoQuarterState() {
-        return noQuarterState;
+    public State getNoCoinState() {
+        return noCoinState;
     }
 
-    public State getHasQuarterState() {
-        return hasQuarterState;
+    public State getHasCoinState() {
+        return hasCoinState;
     }
 
+    public State getEnoughCoinsState() {
+        return enoughCoinsState;
+    }
+    
+    public State getNotEnoughCoinsState() {
+        return notEnoughCoinsState;
+    }
+    
     public State getSoldState() {
         return soldState;
     }

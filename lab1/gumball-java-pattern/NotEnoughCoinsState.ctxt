@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=NotEnoughCoinsState
+comment0.text=\n\ Abstract\ class\ NotEnoughCoinsState\ -\ write\ a\ description\ of\ the\ class\ here\n\n\ @author\ (your\ name\ here)\n\ @version\ (version\ number\ or\ date\ here)\n
+comment1.params=gumballMachine
+comment1.target=NotEnoughCoinsState(GumballMachine)
+comment2.params=
+comment2.target=void\ insertCoin()
+comment3.params=
+comment3.target=void\ ejectCoin()
+comment4.params=
+comment4.target=void\ turnCrank()
+comment5.params=
+comment5.target=void\ dispense()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Coin
+comment0.text=\n\ Enumeration\ class\ Coin\ -\ write\ a\ description\ of\ the\ enum\ class\ here\n\n\ @author\ (your\ name\ here)\n\ @version\ (version\ number\ or\ date\ here)\n
+comment1.params=coinValue
+comment1.target=Coin(int)
+comment2.params=
+comment2.target=int\ coinValue()
+numComments=3
