@@ -1,5 +1,5 @@
 # ignore files 
-*.DS_Store
+lab1/.DS_Store
 **/*.lock
 # except foo.html which is maintained by hand
 #!foo.html
