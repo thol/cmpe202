@@ -6,3 +6,7 @@ clean:
 run-decorator:
 	javac decorator/*.java
 	java  decorator.Tester
+
+run-lambda-decorator:
+	javac lambda_decorator/*.java
+	java  ldecorator.LambdaTester
