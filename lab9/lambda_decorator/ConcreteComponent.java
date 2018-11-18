@@ -1,4 +1,4 @@
-package ldecorator;
+package lambda_decorator;
 
 public class ConcreteComponent implements Component {
 

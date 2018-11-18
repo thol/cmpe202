@@ -1,4 +1,4 @@
-package ldecorator;
+package lambda_decorator;
 
 import java.util.*;
 import java.util.stream.*;

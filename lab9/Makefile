@@ -9,4 +9,4 @@ run-decorator:
 
 run-lambda-decorator:
 	javac lambda_decorator/*.java
-	java  ldecorator.LambdaTester
+	java  lambda_decorator.LambdaTester

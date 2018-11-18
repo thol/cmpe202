@@ -1,11 +1,11 @@
-package ldecorator;
+package lambda_decorator;
 
 @SuppressWarnings("unchecked")
 public class LambdaTester {
 
     public static void runTest()
     {
-        String result = Decorator.operation(new ConcreteComponent(), Component::withEmTag, Component::withH1Tag);
+        String result = Decorator.operation(new ConcreteComponent(), Component::withH1Tag, Component::withEmTag, Component::withH1Tag);
         System.out.println( result );
     }
 
