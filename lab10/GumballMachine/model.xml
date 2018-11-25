@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel>
+		<properties/>
+		<struct>
+			<and abstract="true" mandatory="true" name="GumballMachine">
+				<description>
+					
+				</description>
+				<alt mandatory="true" name="Model">
+					<description>
+						
+					</description>
+					<alt mandatory="true" name="CrankModel">
+						<description>
+							
+						</description>
+						<feature mandatory="true" name="OneQtr">
+							<description>
+								
+							</description>
+						</feature>
+						<feature mandatory="true" name="TwoQtr">
+							<description>
+								
+							</description>
+						</feature>
+					</alt>
+					<feature mandatory="true" name="SlotModel">
+						<description>
+							
+						</description>
+					</feature>
+				</alt>
+				<alt mandatory="true" name="Cost">
+					<description>
+						
+					</description>
+					<feature mandatory="true" name="Cost25">
+						<description>
+							
+						</description>
+					</feature>
+					<feature mandatory="true" name="Cost50">
+						<description>
+							
+						</description>
+					</feature>
+				</alt>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
